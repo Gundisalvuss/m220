@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.ConnectionTest" time="2.092" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.TextAndSubfieldTest" time="4.535" tests="6" errors="2" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -58,7 +58,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testMoviesCount" classname="mflix.api.daos.ConnectionTest" time="0.085"/>
-  <testcase name="testConnectionFindsCollections" classname="mflix.api.daos.ConnectionTest" time="0.999"/>
-  <testcase name="testConnectionFindsDatabase" classname="mflix.api.daos.ConnectionTest" time="1.002"/>
+  <testcase name="testGenreSearch" classname="mflix.api.daos.TextAndSubfieldTest" time="1.912"/>
+  <testcase name="testSearchMultipleCast" classname="mflix.api.daos.TextAndSubfieldTest" time="0">
+    <error message="filter can not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: filter can not be null
+	at mflix.api.daos.TextAndSubfieldTest.testSearchMultipleCast(TextAndSubfieldTest.java:110)
+</error>
+  </testcase>
+  <testcase name="testMultipleGenreSearch" classname="mflix.api.daos.TextAndSubfieldTest" time="2.503"/>
+  <testcase name="testSearchByCast" classname="mflix.api.daos.TextAndSubfieldTest" time="0">
+    <error message="filter can not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: filter can not be null
+	at mflix.api.daos.TextAndSubfieldTest.testSearchByCast(TextAndSubfieldTest.java:83)
+</error>
+  </testcase>
+  <testcase name="testTextSearch" classname="mflix.api.daos.TextAndSubfieldTest" time="0.058"/>
+  <testcase name="testTextSearchCount" classname="mflix.api.daos.TextAndSubfieldTest" time="0.055"/>
 </testsuite>

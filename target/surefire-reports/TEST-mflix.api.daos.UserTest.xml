@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.ConnectionTest" time="2.092" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.UserTest" time="1.108" tests="4" errors="1" skipped="0" failures="3">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -58,7 +58,29 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testMoviesCount" classname="mflix.api.daos.ConnectionTest" time="0.085"/>
-  <testcase name="testConnectionFindsCollections" classname="mflix.api.daos.ConnectionTest" time="0.999"/>
-  <testcase name="testConnectionFindsDatabase" classname="mflix.api.daos.ConnectionTest" time="1.002"/>
+  <testcase name="testLogin" classname="mflix.api.daos.UserTest" time="0.245">
+    <failure message="Should be able to create user sesssion." type="java.lang.AssertionError">java.lang.AssertionError: Should be able to create user sesssion.
+	at mflix.api.daos.UserTest.testLogin(UserTest.java:80)
+</failure>
+    <system-out><![CDATA[2019-02-14 10:33:53.972  INFO 3720 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [mflix.api.daos.UserTest], using SpringBootContextLoader
+2019-02-14 10:33:53.972  INFO 3720 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [mflix.api.daos.UserTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-02-14 10:33:53.975  INFO 3720 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-02-14 10:33:53.976  INFO 3720 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@44924587, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18460128, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@74d3b638, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4487c0c2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@126f1ba8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a08078c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53830483, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@29f85fe1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@43a0a32d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@396ef8b2]
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterUser" classname="mflix.api.daos.UserTest" time="0.267">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at mflix.api.daos.UserTest.testRegisterUser(UserTest.java:71)
+</error>
+  </testcase>
+  <testcase name="testDeleteUser" classname="mflix.api.daos.UserTest" time="0.266">
+    <failure message="You should be able to delete correctly the testDb user. Check your delete filter" type="java.lang.AssertionError">java.lang.AssertionError: You should be able to delete correctly the testDb user. Check your delete filter
+	at mflix.api.daos.UserTest.testDeleteUser(UserTest.java:107)
+</failure>
+  </testcase>
+  <testcase name="testLogout" classname="mflix.api.daos.UserTest" time="0.325">
+    <failure message="Should have deleted user from sessions collection - check your logout method" type="java.lang.AssertionError">java.lang.AssertionError: Should have deleted user from sessions collection - check your logout method
+	at mflix.api.daos.UserTest.testLogout(UserTest.java:97)
+</failure>
+  </testcase>
 </testsuite>

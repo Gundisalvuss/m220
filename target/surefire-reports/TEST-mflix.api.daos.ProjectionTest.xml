@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.ConnectionTest" time="2.092" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.ProjectionTest" time="0.015" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -58,7 +58,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testMoviesCount" classname="mflix.api.daos.ConnectionTest" time="0.085"/>
-  <testcase name="testConnectionFindsCollections" classname="mflix.api.daos.ConnectionTest" time="0.999"/>
-  <testcase name="testConnectionFindsDatabase" classname="mflix.api.daos.ConnectionTest" time="1.002"/>
+  <testcase name="testProjectionShape" classname="mflix.api.daos.ProjectionTest" time="0"/>
+  <testcase name="testFindMoviesByCountry" classname="mflix.api.daos.ProjectionTest" time="0.003">
+    <failure message="Unexpected number of returned movie documents. Check your query filter expected:&lt;2&gt; but was:&lt;0&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Unexpected number of returned movie documents. Check your query filter expected:<2> but was:<0>
+	at mflix.api.daos.ProjectionTest.testFindMoviesByCountry(ProjectionTest.java:45)
+]]></failure>
+  </testcase>
 </testsuite>

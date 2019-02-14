@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.ConnectionTest" time="2.092" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.HandlingErrorsTest" time="0.231" tests="3" errors="1" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -58,7 +58,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testMoviesCount" classname="mflix.api.daos.ConnectionTest" time="0.085"/>
-  <testcase name="testConnectionFindsCollections" classname="mflix.api.daos.ConnectionTest" time="0.999"/>
-  <testcase name="testConnectionFindsDatabase" classname="mflix.api.daos.ConnectionTest" time="1.002"/>
+  <testcase name="testAccessInvalidIdDocument" classname="mflix.api.daos.HandlingErrorsTest" time="0.055"/>
+  <testcase name="testNoUserDups" classname="mflix.api.daos.HandlingErrorsTest" time="0.119">
+    <error message="Unexpected exception, expected&lt;mflix.api.daos.IncorrectDaoOperation&gt; but was&lt;com.mongodb.MongoWriteException&gt;" type="java.lang.Exception"><![CDATA[java.lang.Exception: Unexpected exception, expected<mflix.api.daos.IncorrectDaoOperation> but was<com.mongodb.MongoWriteException>
+	at mflix.api.daos.HandlingErrorsTest.testNoUserDups(HandlingErrorsTest.java:60)
+]]></error>
+  </testcase>
+  <testcase name="testAccessExistingDocument" classname="mflix.api.daos.HandlingErrorsTest" time="0.053"/>
 </testsuite>

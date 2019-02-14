@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.ConnectionTest" time="2.092" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mflix.api.daos.DeleteCommentTest" time="0.533" tests="5" errors="0" skipped="0" failures="2">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -58,7 +58,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testMoviesCount" classname="mflix.api.daos.ConnectionTest" time="0.085"/>
-  <testcase name="testConnectionFindsCollections" classname="mflix.api.daos.ConnectionTest" time="0.999"/>
-  <testcase name="testConnectionFindsDatabase" classname="mflix.api.daos.ConnectionTest" time="1.002"/>
+  <testcase name="testDeleteInvalidCommentId" classname="mflix.api.daos.DeleteCommentTest" time="0.106">
+    <failure message="Expected exception: java.lang.IllegalArgumentException" type="java.lang.AssertionError">java.lang.AssertionError: Expected exception: java.lang.IllegalArgumentException
+</failure>
+    <system-out><![CDATA[2019-02-14 10:34:03.341  INFO 3720 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [mflix.api.daos.DeleteCommentTest], using SpringBootContextLoader
+2019-02-14 10:34:03.341  INFO 3720 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [mflix.api.daos.DeleteCommentTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-02-14 10:34:03.343  INFO 3720 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-02-14 10:34:03.344  INFO 3720 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2149594a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1f1e58ca, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@57f847af, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3ed34ef5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@553bc36c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@380e1909, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2d5ef498, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@95eb320, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2f521c4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4afbb6c2]
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteIncorrectCommentId" classname="mflix.api.daos.DeleteCommentTest" time="0.103"/>
+  <testcase name="testDeleteOfOwnedComment" classname="mflix.api.daos.DeleteCommentTest" time="0.106">
+    <failure message="Should be able to delete owns comments: Check your deleteComment() method" type="java.lang.AssertionError">java.lang.AssertionError: Should be able to delete owns comments: Check your deleteComment() method
+	at mflix.api.daos.DeleteCommentTest.testDeleteOfOwnedComment(DeleteCommentTest.java:55)
+</failure>
+  </testcase>
+  <testcase name="testDeleteNotOwnedComment" classname="mflix.api.daos.DeleteCommentTest" time="0.106"/>
+  <testcase name="testDeleteNonExistingComment" classname="mflix.api.daos.DeleteCommentTest" time="0.105"/>
 </testsuite>
