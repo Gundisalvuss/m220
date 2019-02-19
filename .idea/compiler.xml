@@ -9,5 +9,8 @@
         <module name="mflix" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mflix" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -75,7 +75,9 @@ public class QueryBuilders extends AbstractLesson {
     Document oldFilter =
         new Document("cast", new Document("$all", Arrays.asList("Salma Hayek", "Johnny Depp")));
     List<Document> oldResults = new ArrayList<>();
-    moviesCollection.find(oldFilter).into(oldResults);
+    moviesCollection.find(oldFilter)
+
+            .into(oldResults);
     // There should only be 1 result in our dataset
     Assert.assertEquals(1, oldResults.size());
 
