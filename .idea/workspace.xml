@@ -15,7 +15,7 @@
       <file leaf-file-name="MovieDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
+            <state relative-caret-position="-7">
               <caret line="167" column="18" lean-forward="false" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
               <folding>
                 <element signature="e#910#940#0" expanded="true" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="QueryBuilders.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/QueryBuilders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="84" column="35" lean-forward="true" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+            <state relative-caret-position="-7">
+              <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -39,18 +39,38 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mflix/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="-7">
               <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectionTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProjectionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mflix/api/daos/ProjectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
+            <state relative-caret-position="-7">
               <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicWrites.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/BasicWrites.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="220" column="64" lean-forward="true" selection-start-line="220" selection-start-column="64" selection-end-line="220" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsingAggregationBuilders.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/UsingAggregationBuilders.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4590">
+              <caret line="315" column="12" lean-forward="false" selection-start-line="315" selection-start-column="4" selection-end-line="315" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -59,7 +79,7 @@
       <file leaf-file-name="ConnectionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mflix/api/daos/ConnectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
+            <state relative-caret-position="0">
               <caret line="64" column="48" lean-forward="false" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
               <folding />
             </state>
@@ -69,7 +89,7 @@
       <file leaf-file-name="AbstractLesson.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/AbstractLesson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="0">
               <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="22" />
               <folding />
             </state>
@@ -92,6 +112,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/mflix/lessons/QueryBuilders.java" />
         <option value="$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mflix/lessons/BasicWrites.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mflix/lessons/UsingAggregationBuilders.java" />
       </list>
     </option>
   </component>
@@ -105,10 +127,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2022" />
-    <option name="y" value="67" />
-    <option name="width" value="1400" />
-    <option name="height" value="960" />
+    <option name="x" value="1919" />
+    <option name="y" value="1" />
+    <option name="width" value="1922" />
+    <option name="height" value="1079" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -219,6 +241,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -301,7 +324,7 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2022" y="67" width="1922" height="1079" extended-state="6" />
+    <frame x="1919" y="1" width="1922" height="1079" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -310,7 +333,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28893444" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28893444" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -383,7 +406,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/AbstractLesson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="0">
           <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="22" />
           <folding />
         </state>
@@ -398,7 +421,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mflix/api/daos/ConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
+        <state relative-caret-position="0">
           <caret line="64" column="48" lean-forward="false" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
           <folding />
         </state>
@@ -406,7 +429,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mflix/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="-7">
           <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding />
         </state>
@@ -414,15 +437,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/QueryBuilders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="84" column="35" lean-forward="true" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+        <state relative-caret-position="-7">
+          <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
+        <state relative-caret-position="-7">
           <caret line="167" column="18" lean-forward="false" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
           <folding>
             <element signature="e#910#940#0" expanded="true" />
@@ -434,8 +457,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mflix/api/daos/ProjectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
+        <state relative-caret-position="-7">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/BasicWrites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="220" column="64" lean-forward="true" selection-start-line="220" selection-start-column="64" selection-end-line="220" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mflix/lessons/UsingAggregationBuilders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="315" column="12" lean-forward="false" selection-start-line="315" selection-start-column="4" selection-end-line="315" selection-end-column="12" />
           <folding />
         </state>
       </provider>
